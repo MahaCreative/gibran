@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('sent-data', function (Request $request) {
+    dd($request->all());
     $data = Data::create([
         'status_lampu1' => $request->status_lampu1,
         'status_lampu2' => $request->status_lampu2,
