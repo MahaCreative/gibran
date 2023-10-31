@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('data', function (Blueprint $table) {
             $table->id();
-            $table->string('status_lampu1');
-            $table->string('status_lampu2');
+            $table->string('status_lampu1')->nullable();
+            $table->string('status_lampu2')->nullable();
             $table->string('status_kipas')->nullable();
-            $table->string('suhu')->nullable();
+            $table->string('temperature')->nullable();
+            $table->string('humidity')->nullable();
             $table->timestamps();
         });
     }
