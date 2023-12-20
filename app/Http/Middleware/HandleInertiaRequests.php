@@ -31,7 +31,7 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
-        $data = Data::latest()->first();
+        $data = Data::first();
 
         return [
             ...parent::share($request),
