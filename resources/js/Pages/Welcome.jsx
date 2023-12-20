@@ -130,7 +130,10 @@ export default function Welcome(props) {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-8 right-8 w-10 h-10 bg-green-400 rounded-lg z-[9999] text-center flex items-center justify-center active:bg-green-700">
+            <div
+                onClick={() => window.location.reload()}
+                className="absolute bottom-8 right-8 w-10 h-10 bg-green-400 rounded-lg z-[9999] text-center flex items-center justify-center active:bg-green-700"
+            >
                 <button className="text-white">
                     <RefreshIcon color="inherit" />
                 </button>
